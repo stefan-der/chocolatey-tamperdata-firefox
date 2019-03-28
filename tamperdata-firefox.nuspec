@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <title>tamperdata-firefox (Install)</title>
     <authors>Pamblam</authors>
     <!-- projectUrl is required for the community feed -->
-    <projectUrl>https://addons.mozilla.org/firefox/downloads/file/1081527/tamper_data_for_ff_quantum-0.3-an+fx.xpi?src=dp-btn-primary</projectUrl>
+    <projectUrl>https://addons.mozilla.org/en-US/firefox/addon/tamper-data-for-ff-quantum/</projectUrl>
     <iconUrl>https://camo.githubusercontent.com/8482d889055af4465dab448ca3a46b3bb19f0891/68747470733a2f2f692e696d6775722e636f6d2f716b4a7641514f2e706e67</iconUrl>
     <!-- <copyright>Year Software Vendor</copyright> -->
     <!-- If there is a license Url available, it is required for the community feed -->
@@ -49,7 +49,14 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <bugTrackerUrl>https://github.com/Pamblam/Tamper-Data-for-FF-Quantum/issues</bugTrackerUrl>
     <tags></tags>
     <summary>Tamper-Data-for-FF-Quantum extension for Firefox</summary>
-    <description>It's like the old Tamper Data extension, except it works on modern versions of Firefox.</description>
+    <description>It's like the old Tamper Data extension, except it works on modern versions of Firefox.
+    - Monitor live requests
+    - Edit headers on live requests
+    - Cancel live requests
+    - Redirect live requests
+
+    Click the blue cloud in the toolbar to start tampering. When you're done, click it again to stop.
+    </description>
     <!-- <releaseNotes>__REPLACE_OR_REMOVE__MarkDown_Okay</releaseNotes> -->
     <!-- =============================== -->
 
