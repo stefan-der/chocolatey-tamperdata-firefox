@@ -1,3 +1,8 @@
+# This Package is inspired by
+#   proudcanadianeh - uBlock Origin for Firefox
+#   doc - adblockplus-firefox
+# Thanks for that!
+
 ﻿$ErrorActionPreference = 'Stop';
 $url        = 'https://addons.mozilla.org/firefox/downloads/file/1081527/tamper_data_for_ff_quantum-0.3-an+fx.xpi'
 
@@ -8,7 +13,7 @@ $url        = 'https://addons.mozilla.org/firefox/downloads/file/1081527/tamper_
 # open about:memory (Firefox)
 # Section "Show memory reports" click on "Measure"
 # Search for Addon Name -> there should be an entry with extension id="<extension_specific_id>"
-$extensionName = "{2bd18ca8-5dd7-4311-a777-02ed29663496}.xpi" 
+$extensionName = "{2bd18ca8-5dd7-4311-a777-02ed29663496}.xpi"
 
 #Find Firefox install location
 if(test-path 'hklm:\SOFTWARE\Mozilla\Firefox\TaskBarIDs'){
@@ -20,7 +25,7 @@ if(test-path 'hklm:\SOFTWARE\Mozilla\Firefox\TaskBarIDs'){
 }else{
 	throw "Firefox install not detected"
 }
- 
+
 #Generate path for copy
 $browserFolder = Join-Path $installDir "browser"
 $extensionsFolder = Join-Path $browserFolder "extensions"
@@ -31,7 +36,7 @@ $isrunning = Get-Process -Name firefox -ErrorAction SilentlyContinue
 if ($isrunning){
     throw "Firefox running"
 }
- 
+
 #Copy to Firefox system extensions folder
 Write-Output "Preparing to install to path $extFile"
 try {
