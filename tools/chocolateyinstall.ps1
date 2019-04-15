@@ -3,8 +3,8 @@
 #   doc - adblockplus-firefox
 # Thanks for that!
 
-﻿$ErrorActionPreference = 'Stop';
-$url        = 'https://addons.mozilla.org/firefox/downloads/file/1081527/tamper_data_for_ff_quantum-0.3-an+fx.xpi'
+#$url        = 'https://addons.mozilla.org/firefox/downloads/file/1081527/tamper_data_for_ff_quantum-0.3-an+fx.xpi'
+$url        = 'https://addons.cdn.mozilla.net/user-media/addons/998256/tamper_data_for_ff_quantum-0.3-an+fx.xpi?filehash=sha256%3A031e45ece363fc6d91f3892f9622d601b664ac12040f23de5f5a906a4638bfa2'
 
 # For deploying Firefox Addons the Filename has to be "<extension_specific_id>.xpi"
 # in all other cases Firefox ignores xpi file
